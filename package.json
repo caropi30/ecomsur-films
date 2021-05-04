@@ -1,0 +1,17 @@
+{
+  "author": "Carolina Pirela / caropi30@gmail.com",
+  "description": "Prueba Ecomsur",
+  "license": "MIT",
+  "name": "prueba",
+  "scripts": {
+    "watch:css": "nodemon -e scss -x \"npm run build:css\"",
+    "build:css": "node-sass --output-style compressed scss/style.scss css/main.css"
+  },
+  "version": "1.0.0",
+  "devDependencies": {
+    "autoprefixer": "^9.7.1",
+    "node-sass": "^4.14.1",
+    "nodemon": "^2.0.7",
+    "postcss-cli": "^6.1.3"
+  }
+}
