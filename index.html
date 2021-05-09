@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Prueba - Ecomsur</title>
+        <meta name="author" content="Carolina Pirela">
+        <meta name="copyright" content="Propietaria Carolina Pirela" />
+        <meta name="description" content="Prueba HTML/CSS/ Javascript Ecomsur">
+        <meta name="keywords" content="prueb, Prueba, test, Test, html, HTML, css, CSS, Cascade Stylesheet, Javascript, vanilla js, js">
+        <meta name="generator" content="prestashop">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <!--Font-->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;500;700&display=swap" rel="stylesheet">
+        
+        <!--Style-->
+        <link rel="stylesheet" type="text/css" href="css/main.css">
+
+        <!--Javascript-->
+        <script defer src="script/search.js"></script>
+        <script defer src="script/crud.js"></script>
+    </head>
+    <body>
+        <main class="grid">
+            <header class="nav">
+                <img src="assets/logo.svg"Media Films logo">
+                <div id="shoppingCart">
+                    <img src="assets/shopping-cart.svg" alt="shopping cart">
+                    <p id="countCart">0</p>
+                </div>
+            </header>
+            <sectio class="search">
+                <input type="text" id="searchbar" >
+                <button type="button" id="btnSearch" onclick="searchFilm()">Buscar</button>
+            </sectio>
+            <section class="grid">
+                <div class="film-card">
+                    <div class="film-img">
+                        <img id="poster">
+                    </div>
+                    <div class="film-info">
+                        <h3 class="film-info--title" id="title"></h3>
+                        <p class="film-info--description" id="description"></p>
+                    </div>
+                    <div class="film-add">
+                        <button type="button" onclick="addFilm()">Agregar</button>
+                    </div>
+                </div>
+            </section>
+
+            <div class="modal-cart" id="cart"> 
+               
+            </div>
+            <div class="dark-layout" id="darkBg">
+
+            </div>
+        </main>
+
+    </body>
+</html>
