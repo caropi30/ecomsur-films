@@ -1,0 +1,51 @@
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .welcome {
+        text-align: center;
+        color: $secondary-color;
+        padding: 10rem 0 5em 0;
+        margin: 0 2rem;
+        &-title {
+            h1 {
+                font-size: $small;
+                font-weight: $regular;
+            }
+            h2 {
+                font-size: $large;
+                color: $primary-color;
+                font-weight: $extra-bold;
+            }
+        }
+        &-text {
+            p {
+                margin-top: 2.5rem;
+                font-size: $small;
+            }
+        }
+    }
+}
+
+@media (min-width: 768px){
+  .welcome {
+        text-align: center;
+        color: $secondary-color;
+        padding: 10rem 0 5rem 0;
+        &-title {
+            h1 {
+                font-size: $small;
+                font-weight: $regular;
+            }
+            h2 {
+                font-size: $large;
+                color: $primary-color;
+                font-weight: $extra-bold;
+            }
+        }
+        &-text {
+            p {
+                margin-top: 1.5rem;
+                font-size: $small;
+            }
+        }
+    }   
+}

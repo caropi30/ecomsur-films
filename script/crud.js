@@ -1,10 +1,7 @@
 //Agregar película
 let filmList = [];
-const cart = document.querySelector('#cart');
 const countCart = document.querySelector('#countCart');
 const shoppingCart = document.querySelector('#shoppingCart');
-const darkBg = document.querySelector('#darkBg');
-
 
 
 const updateFilms = () => {
@@ -12,7 +9,7 @@ const updateFilms = () => {
     if (filmList.length > 0) {
         for (let i = 0; i < filmList.length; i++) {
             let filmCard = `<div class="modal-cart--img">
-                                <img src="${filmList[i].Poster}">
+                                <img src="${filmList[i].Poster}" alt="poster">
                             </div>
                             <div class="modal-cart--info">
                                 <h3>${filmList[i].Title}</h3>

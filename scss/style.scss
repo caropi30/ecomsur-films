@@ -9,8 +9,15 @@
 
 
 /*Components Folder*/
+@import 'components/navbar';
+@import 'components/welcome';
+@import 'components/searchbar';
 @import 'components/buttons';
+@import 'components/card';
+@import 'components/modal';
+@import 'components/footer';
 
 /*Layout Folder*/
 @import 'layout/desktop';
+@import 'layout/tablet';
 @import 'layout/mobile';

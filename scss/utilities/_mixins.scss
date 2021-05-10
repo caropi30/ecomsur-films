@@ -1,0 +1,48 @@
+@mixin width-100{
+    width: 100%;
+    
+}
+
+@mixin width-50{
+    width: 50%;
+    
+}
+
+@mixin relative {
+    position: relative;
+}
+
+@mixin absolute {
+    position: absolute;
+}
+
+@mixin display-none {
+    display: none;
+}
+
+@mixin margin-1 {
+    margin: 1rem;
+}
+
+@mixin padding-1 {
+    padding: 1rem;
+}
+
+@mixin align-foot {
+    color: $primary-color;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@mixin bg-primary {
+    background-color: $primary-color;
+}
+
+@mixin bg-base {
+    background-color: $base-color;
+}
+
+@mixin border-radius {
+    border-radius: 5px;
+}

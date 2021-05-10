@@ -6,7 +6,7 @@
         <meta name="author" content="Carolina Pirela">
         <meta name="copyright" content="Propietaria Carolina Pirela" />
         <meta name="description" content="Prueba HTML/CSS/ Javascript Ecomsur">
-        <meta name="keywords" content="prueb, Prueba, test, Test, html, HTML, css, CSS, Cascade Stylesheet, Javascript, vanilla js, js">
+        <meta name="keywords" content="prueba, Prueba, test, Test, html, HTML, css, CSS, Cascade Stylesheet, Javascript, vanilla js, js">
         <meta name="generator" content="prestashop">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
@@ -16,46 +16,61 @@
         
         <!--Style-->
         <link rel="stylesheet" type="text/css" href="css/main.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 
         <!--Javascript-->
         <script defer src="script/search.js"></script>
         <script defer src="script/crud.js"></script>
     </head>
     <body>
-        <main class="grid">
-            <header class="nav">
+        <header class="nav">
+            <div class="nav-logo">
                 <img src="assets/logo.svg"Media Films logo">
-                <div id="shoppingCart">
-                    <img src="assets/shopping-cart.svg" alt="shopping cart">
-                    <p id="countCart">0</p>
+            </div>
+            <div class="nav-shoppingCart" id="shoppingCart">
+                <img src="assets/shopping-cart.svg" alt="shopping cart">
+                <p id="countCart">0</p>
+            </div>
+            <div class="nav-responsive">
+                <div class="nav-responsive__icon" id="btnBurger" onclick="showModal();">
+                    <img src="assets/burger.svg" alt="Responsive menu icon">
                 </div>
-            </header>
-            <sectio class="search">
+
+            </div>
+        </header>
+        <main class="grid">
+            <section class="welcome">
+                <div class="welcome-title">
+                    <h1 class="animate__animated animate__backInDown">Bienvenido a</h1>
+                    <h2 class="animate__animated animate__zoomIn">Movie Media</h2>
+                </div>
+                <div class="welcome-text">
+                    <p>Encuentra la película que quieres ver</p>
+                </div>
+            </section>
+            <section class="search">
                 <input type="text" id="searchbar" >
                 <button type="button" id="btnSearch" onclick="searchFilm()">Buscar</button>
-            </sectio>
-            <section class="grid">
-                <div class="film-card">
-                    <div class="film-img">
-                        <img id="poster">
-                    </div>
-                    <div class="film-info">
-                        <h3 class="film-info--title" id="title"></h3>
-                        <p class="film-info--description" id="description"></p>
-                    </div>
-                    <div class="film-add">
-                        <button type="button" onclick="addFilm()">Agregar</button>
-                    </div>
-                </div>
+            </section>
+            <section id="film">
+                
             </section>
 
             <div class="modal-cart" id="cart"> 
+                <div class="modal-cart--close">
+                    <img src="assets/cancel.svg" alt="close-icon">
+                </div>
                
             </div>
             <div class="dark-layout" id="darkBg">
 
             </div>
         </main>
-
+        <footer class="foot">
+            <div class="foot-logo">
+                    <img src="assets/logo.svg" alt="Media Films logo">
+                </div>
+            <p>Todos los Derechos Reservados - 2021</p>
+        </footer>
     </body>
 </html>

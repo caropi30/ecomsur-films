@@ -1,0 +1,65 @@
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .nav {
+        display: flex;
+        justify-content: flex-end;
+        padding: 2rem 2rem;
+        &-logo {
+            @include display-none;
+        }
+        &-shoppingCart {
+            @include display-none;
+        }
+        &-responsive {
+            width: 15%;
+            @include margin-1;
+            &__icon {
+                width: 60%;
+                img {
+                    @include width-100;
+                }
+            }
+        }
+    }
+}
+
+// Medium & Large devices (tablets - laptops)
+@media (min-width: 768px) {
+    .nav {
+        display: flex;
+        justify-content: space-between;
+        padding: 2rem;
+        &-logo {
+            width: 8%;
+            img {
+                width: 100%;
+            }
+        }
+        &-shoppingCart {
+            width: 10%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: $secondary-color;
+            border: 2px solid $primary-color;
+            border-radius: 5px;
+            @include bg-primary;
+            margin: .5rem;
+            img {
+                @include bg-primary;
+                width: 50%;
+                padding-left: .5rem;
+            }
+            p {
+                @include bg-primary;
+                padding: .5rem;
+            }
+        }
+        &-responsive {
+            @include display-none;
+        }
+    }
+}
+
+
+   

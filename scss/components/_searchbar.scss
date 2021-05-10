@@ -1,0 +1,35 @@
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .search {
+        display: flex;
+        flex-direction: column;
+        padding: 0 4rem 5rem 4rem;
+
+        input {
+            border: 2px solid $primary-color;
+            border-radius: 5px;
+            padding: 1.5rem;
+            color: $primary-color;
+            font-size: $small;
+            font-weight: $light;
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .search {
+        display: flex;
+        flex-direction: column;
+        padding: 0 4rem 5rem 4rem;
+        margin: 0 2rem;
+
+        input {
+            border: 2px solid $primary-color;
+            border-radius: 5px;
+            color: $primary-color;
+            font-size: $small;
+            font-weight: $light;
+            margin-bottom: 1rem;
+        }
+    }
+}

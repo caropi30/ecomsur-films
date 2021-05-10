@@ -1,0 +1,56 @@
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) and (max-width: 767.98px) {
+    #btnSearch{
+        margin-top: 1rem;
+        @include border-radius;
+        @include width-100;
+        border: 1px solid $primary-color;
+        border-radius: 5px;
+        @include padding-1;
+        @include bg-primary;
+        color: $secondary-color;
+        font-size: $extra-small;
+        font-weight: $bold;
+        padding: 1.5rem;
+    }
+    #btnAdd {
+        margin: 2rem;
+        @include width-100;
+        border: 1px solid $base-color;
+        @include border-radius;
+        @include padding-1;
+        @include bg-base;
+        color: $primary-color;
+        font-size: $extra-small;
+        font-weight: $bold;
+        padding: 1.5rem;
+    }
+}
+
+@media (min-width: 768px){
+    #btnSearch{
+        align-self: center;;
+        @include width-50;
+        border: 1px solid $primary-color;
+        @include border-radius;
+        @include padding-1;
+        @include bg-primary;
+        color: $secondary-color;
+        font-size: $extra-small;
+        font-weight: $bold;
+        padding: 1rem;
+    }
+    #btnAdd {
+        margin: 2rem 0;
+        @include width-50;
+        border: 1px solid $base-color;
+        @include border-radius;
+        @include padding-1;
+        @include bg-base;
+        color: $primary-color;
+        font-size: $extra-small;
+        font-weight: $bold;
+        padding: 1.5rem;
+    }
+}
+
