@@ -1,12 +1,13 @@
-
-
-.grid {
-    position: relative;
+@media (min-width: 992px) {
+    .grid {
+        position: relative;
+    }
+    
+    .dark-layout {
+        width: 100%;
+        height: 100vw;
+        position: fixed;
+        background-color: rgba(0, 0, 0, 0.3);
+    }
 }
 
-.dark-layout {
-    width: 100%;
-    height: 100vw;
-    position: fixed;
-    background-color: rgba(0, 0, 0, 0.3);
-}

@@ -53,6 +53,7 @@
             p {
                 @include bg-primary;
                 padding: .5rem;
+                font-size: $extra-small;
             }
         }
         &-responsive {
