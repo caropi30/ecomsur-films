@@ -1,6 +1,6 @@
 Ecomsur 
 
-Este es un pequeño proyeto de postulación laboral, siguiendo directrices de petición de comportamiento Javascript, HTML y Css.
+Este es un pequeño proyeto de prática, siguiendo directrices de petición de comportamiento Javascript, HTML y Css.
 
 Aún no está totalmente terminado, pero va en vías.
 
